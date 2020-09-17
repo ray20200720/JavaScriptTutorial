@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moment example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+</head>
+<body>
+    <p id="format1"></p>
+    <p id="format2"></p>
+    <p id="format3"></p>
+    <p id="format4"></p>
+    <script>
+        document.getElementById("format1").innerHTML =  moment();
+        document.getElementById("format3").innerHTML =  moment().format("YYYY-MM-DD");
+        document.getElementById("format4").innerHTML =  moment().format("YYYY/MM/DD");
+        document.getElementById("format2").innerHTML =  moment().format("YYYYMMDD");
+    </script>
+</body>
+</html>
